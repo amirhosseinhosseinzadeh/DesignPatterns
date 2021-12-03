@@ -1,0 +1,37 @@
+◙ Singleton pattern
+◙ Factory Pattern
+◙ Template method pattern
+◙ Adapter pattern
+◙ Facade pattern
+◙ Strategy pattern
+◙ State pattern
+◙ Proxy pattern
+◙ Chain of responsibility pattern
+◙ Bridge pattern
+◙ Composite pattern
+◙ Decorator pattern
+◙ Observer patterns
+◙ Builder pattern
+◙ Flyweghit pattern
+◙ Repository pattern
+---------------------------------------------------------------------------------------------
+
+Singleton pattern =>
+{
+	If you want a class have only one object , Then we use singleton pattern
+	
+	make object constructor private
+	we create a private field from that type and create a method to check if field is null then initialize it and return that field
+	then make initializer method static
+	another way for initializing is property with encapsulation 
+}
+
+Factory pattern =>
+{
+	The idea is what kind of object must be created base on some kindof parameters
+}
+
+Template method pattern => 
+{
+	Subclass decide how to implement steps in an algorithm.
+}
