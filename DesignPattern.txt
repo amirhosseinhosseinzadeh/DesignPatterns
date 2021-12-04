@@ -51,3 +51,11 @@ Adapter pattern =>
 	which cannot be directly used wiht the new ouput requirements but it also be a waste of time and resources to 
 	again write the computational logic or maybe copy it to a new class 
 }
+
+Facade pattern =>
+{
+	This design pattern will provide an unified and simplified interface in a subsystem 
+	there for it hides the complexities of the subsystem from the client.
+	It means if you have a client and a complex class than "FACADE" provides a simplified to a complex set of classes
+	now instead of classes it can be complex or component or a group of component as well 
+}

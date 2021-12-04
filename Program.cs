@@ -1,5 +1,8 @@
 ﻿using static System.Console;
-using DesignPatterns.Adapter;
+// using DesignPatterns.Facade.AuthenticationComponent;
+// using DesignPatterns.Facade.AuthorizationComponent;
+// using DesignPatterns.Facade.ValidationComponent;
+using DesignPatterns.Facade;
 
 namespace DesignPatterns
 {
@@ -7,11 +10,29 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Setting input for dvi Monitor!");
-            VgaGraphicsCard vgaGraphicsCard= new();
-            DviMonitor dviMonitor = new();
-            VgaGraphicsCardAdapter vgaGraphicsCardAdapter = new(vgaGraphicsCard);
-            dviMonitor.SetInput(vgaGraphicsCardAdapter.GetDviStream());
+            string userName = "";
+            string password = "";
+
+            // without FACADE design pattern
+            // ---------------------------------------------------------------------
+            // var validationService = new ValidationService();
+            // if(validationService.ISValidated(userName,password))
+            // {
+            //     var authenticationService = new AuthenticationService();
+            //     if(authenticationService.IsAuthenticated(userName,password))
+            //     {
+            //         var authorizationService  = new AuthorizationService();
+            //         if(authorizationService.IsAuthorized(userName,password))
+            //             System.Console.WriteLine("User loged in !");
+            //     }
+            // }
+            //------------------------------------------------------------------------
+
+            //FACADE solution 
+            var loginFacade = new LoginFacade();
+            if(loginFacade.CanLogin(userName,password))
+                System.Console.WriteLine("user loged in !");
+
             ReadLine();
         }
     }
