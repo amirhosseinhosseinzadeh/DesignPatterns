@@ -42,9 +42,9 @@ Adapter pattern =>
 	or interface of an existing class with another class which is considerably different and is not 
 	compatible.
 	Adapter pattern is most frequently used when we need to retrofit the classes created
-	for a legacy system to be used with bew classes which cannot be integrated directly with The
+	for a legacy system to be used with new classes which cannot be integrated directly with The
 	legacy classes
-	A readl-world example can be of a video cable which can be used to convert a VGA output from a
+	A real-world example can be of a video cable which can be used to convert a VGA output from a
 	graphics card into a DVI input supported by monitor that we are using the final
 	output is a video on the screen but the source video data is different 
 	A code example can be of an older class whch has a function returning computational data
