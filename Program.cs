@@ -1,11 +1,5 @@
-﻿using System;
-using DesignPatterns.Singleton;
-using static System.Console;
-using DesignPatterns.Factory;
-using DesignPatterns.TemplateMethod;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
+﻿using static System.Console;
+using DesignPatterns.Adapter;
 
 namespace DesignPatterns
 {
@@ -13,6 +7,12 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
+            System.Console.WriteLine("Setting input for dvi Monitor!");
+            VgaGraphicsCard vgaGraphicsCard= new();
+            DviMonitor dviMonitor = new();
+            VgaGraphicsCardAdapter vgaGraphicsCardAdapter = new(vgaGraphicsCard);
+            dviMonitor.SetInput(vgaGraphicsCardAdapter.GetDviStream());
+            ReadLine();
         }
     }
 }
