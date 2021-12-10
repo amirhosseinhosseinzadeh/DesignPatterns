@@ -1,4 +1,4 @@
-namespace DesignPatterns.Factory
+namespace DesignPatterns.CreationalPatterns.Factory
 {
     public class Calculatefactory
     {

@@ -1,7 +1,9 @@
 ﻿using static System.Console;
-using DesignPatterns.AbstractFactory;
-using DesignPatterns.AbstractFactory.Colors;
-using DesignPatterns.AbstractFactory.Shapes;
+// using DesignPatterns.Facade.AuthenticationComponent;
+// using DesignPatterns.Facade.AuthorizationComponent;
+// using DesignPatterns.Facade.ValidationComponent;
+using DesignPatterns.Facade;
+using DesignPatterns.CreationalPatterns;
 
 namespace DesignPatterns
 {
@@ -9,14 +11,38 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            ShapeFactory shapeFactory = new ShapeFactory();
-            ColorFactory colorFactory = new ColorFactory();
+            string userName = "";
+            string password = "";
 
-            Circle circle  = shapeFactory.GetData((int)ShapeTypes.Circle).DataItem as Circle;
-            circle.GetInfo();
+            // without FACADE design pattern
+            // ---------------------------------------------------------------------
+            // var validationService = new ValidationService();
+            // if(validationService.ISValidated(userName,password))
+            // {
+            //     var authenticationService = new AuthenticationService();
+            //     if(authenticationService.IsAuthenticated(userName,password))
+            //     {
+            //         var authorizationService  = new AuthorizationService();
+            //         if(authorizationService.IsAuthorized(userName,password))
+            //             System.Console.WriteLine("User loged in !");
+            //     }
+            // }
+            //------------------------------------------------------------------------
 
-            Red red  = colorFactory.GetData((int)ColorTypes.Red).DataItem as Red;
-            red.GetInfo();
+            //FACADE solution 
+            var loginFacade = new LoginFacade();
+            if(loginFacade.CanLogin(userName,password))
+                System.Console.WriteLine("user loged in !");
+
+            var firstCustomer = new Customer()
+            {
+                Name = "Alireza",
+                LastName = "Mori",
+                PhoneNumber = "+9890122222222"
+            };
+            var firstCustomerClone = firstCustomer.Clone();
+
+            ReadLine();
         }
     }
 }
