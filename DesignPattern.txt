@@ -1,19 +1,37 @@
-◙ Singleton pattern
-◙ Factory Pattern
-◙ Template method pattern
-◙ Adapter pattern
-◙ Facade pattern
-◙ Strategy pattern
-◙ State pattern
-◙ Proxy pattern
-◙ Chain of responsibility pattern
-◙ Bridge pattern
-◙ Composite pattern
-◙ Decorator pattern
-◙ Observer patterns
-◙ Builder pattern
-◙ Flyweghit pattern
-◙ Repository pattern
+Creational
+{
+	◙ Singleton pattern
+	◙ Factory Pattern
+	◙ Abstract factory Pattern
+	◙ Builder pattern
+	◙ Prototype Pattern
+}
+Structural
+{
+	◙ Adapter pattern
+	◙ Composite pattern
+	◙ Proxy pattern
+	◙ Flyweghit pattern
+	◙ Facade pattern
+	◙ Bridge pattern
+	◙ Decorator pattern
+}
+Behavioral
+{
+	◙ Template method pattern
+	◙ Mediator pattern
+	◙ Chain of responsibility pattern
+	◙ Observer patterns
+	◙ Strategy pattern
+	◙ Command pattern
+	◙ State pattern
+	◙ Visitor pattern
+	◙ Iterator pattern
+	◙ Interpreter pattern
+	◙ Memento pattern
+	◙ Repository pattern
+}
+
 ---------------------------------------------------------------------------------------------
 
 Singleton pattern =>
@@ -51,7 +69,6 @@ Adapter pattern =>
 	which cannot be directly used wiht the new ouput requirements but it also be a waste of time and resources to 
 	again write the computational logic or maybe copy it to a new class 
 }
-<<<<<<< HEAD
 
 Facade pattern =>
 {
@@ -60,5 +77,24 @@ Facade pattern =>
 	It means if you have a client and a complex class than "FACADE" provides a simplified to a complex set of classes
 	now instead of classes it can be complex or component or a group of component as well 
 }
-=======
->>>>>>> 5efde52ea96439f7ddd19a84f5bac1f960aa7a03
+
+Prototype pattern =>
+{
+	The whole idea is base on the prototpye and what is this prototype refer to 
+	First we need an interface or kind of abstract class to implement the copy/clone method
+	So we configuring what we want to be create at run time thats the main differenc 
+	between the factory where its kind of like at compile time ,we decide what we want 
+	to create with passing some parameters although it not quite powerful as the prototype pattern
+	There is two main way that we a use it 
+	This approach saves costly resources and time, especially when object creation is a heavy process
+	|	the first Just hving your application compose these prototypes and it really 
+		dependent what your application does and we'll we're going to take look at it in a real world 
+		example in the source code
+	------------------------------------------------
+	|	but anotherway that can be nore digestible at the moment is for example if we have factory and 
+	 	and this factory may implement some kindof interface and if you have a big hierchy of objects
+		that you may want to have you factory class create instead of creating the the identical
+		amount of factories that could possbly create all types of combinations of all the 
+		gardens that you want you can simply supply prototypes in to the factory is going to spit out the 
+		appropriate seeds
+}
