@@ -108,3 +108,12 @@ Abstract factory =>
 	only expose methods which will rtun the created object
 	In the case of factory pattern when we have to create two or more factory classes then we can use  
 }
+
+Builder pattern =>
+{
+	If you want to build a class which might have many subclasses it is wiser to it by methods and not by consttuctor parameters.
+	The reason is that there wont be many empty parameters everytime creating a new object of the main class.
+	In order to use this pattern, first create an interface of all the methods which needs to be implemented by the concrete builders.
+	Then implement those methods by the specific builders. There can also be a director class which its job is to insure that the order of
+	using the methods are correct.
+}
