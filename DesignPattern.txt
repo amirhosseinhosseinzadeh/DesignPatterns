@@ -98,3 +98,13 @@ Prototype pattern =>
 		gardens that you want you can simply supply prototypes in to the factory is going to spit out the 
 		appropriate seeds
 }
+
+Abstract factory =>
+{
+	Abstrct factory is similar to any other abstract class 
+	This pattern is useful when the object must create so many times and we dont wqnt to write the intialization code 
+	again and again.
+	In this pattern we will create a class and it will use to hide the implementation code of object creation and 
+	only expose methods which will rtun the created object
+	In the case of factory pattern when we have to create two or more factory classes then we can use  
+}
