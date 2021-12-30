@@ -32,7 +32,7 @@ namespace DesignPatterns
             //FACADE solution 
             var loginFacade = new LoginFacade();
             if(loginFacade.CanLogin(userName,password))
-                System.Console.WriteLine("user loged in !");
+                WriteLine("user loged in !");
 
             var firstCustomer = new Customer()
             {
