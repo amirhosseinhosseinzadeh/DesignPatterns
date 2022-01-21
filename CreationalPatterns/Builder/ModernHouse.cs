@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.CreationalPatterns
 {
-    internal class ModernHouse
+    internal class ModernHouse : IHouse
     {
         public void BuildWalls() { }
         public void BuildFloor() { }
