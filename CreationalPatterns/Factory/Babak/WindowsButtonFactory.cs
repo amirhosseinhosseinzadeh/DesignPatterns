@@ -2,6 +2,6 @@
 {
     public class WindowsButtonFactory : ButtonFactory
     {
-        public WindowsButton CreateButton() => new WindowsButton();
+        public override IButton CreateButton() => new WindowsButton();
     }
 }

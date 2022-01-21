@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.CreationalPatterns.Factory
 {
-    public class WindowsButton : IButton
+    class WindowsButton : IButton
     {
         public void Click() 
         {

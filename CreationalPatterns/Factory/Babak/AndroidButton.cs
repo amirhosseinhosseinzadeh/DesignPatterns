@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.CreationalPatterns.Factory
 {
-    public class AndroidButton : IButton
+    class AndroidButton : IButton
     {
         public void Click()
         {

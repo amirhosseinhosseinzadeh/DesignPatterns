@@ -1,7 +1,7 @@
 ﻿namespace DesignPatterns.CreationalPatterns.Factory
 {
-    public class AndroidButtonFactory
+    public class AndroidButtonFactory : ButtonFactory
     {
-        public AndroidButton CreateButton => new AndroidButton();
+        public override IButton CreateButton() => new AndroidButton();
     }
 }
