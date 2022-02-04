@@ -2,23 +2,36 @@
 {
     public class HouseDirector
     {
-        private IHouse _house;
-
-        public HouseDirector(IHouse house) 
+        public IHouse CreateModernHouse() 
         {
-            _house = house;
+            var modernHouse = new ModernHouse();
+
+            modernHouse.BuildFoundation();
+            modernHouse.BuildFloor();
+            modernHouse.BuildWalls();
+            modernHouse.BuildCeiling();
+            modernHouse.BuildDoors();
+            modernHouse.BuildWindows();
+            modernHouse.BuildGarden();
+            modernHouse.BuildPool();
+
+            return modernHouse;
         }
 
-        public void BuildHouse() 
+        public IHouse CreateWoodenHouse()
         {
-            _house.BuildFoundation();
-            _house.BuildFloor();
-            _house.BuildWalls();
-            _house.BuildWindows();
-            _house.BuildDoors();
-            _house.BuildCeiling();
-            _house.BuildGarden();
-            _house.BuildPool();
+            var woodenHouse = new WoodenHouse();
+
+            woodenHouse.BuildFoundation();
+            woodenHouse.BuildFloor();
+            woodenHouse.BuildWalls();
+            woodenHouse.BuildCeiling();
+            woodenHouse.BuildDoors();
+            woodenHouse.BuildWindows();
+            woodenHouse.BuildGarden();
+            woodenHouse.BuildPool();
+
+            return woodenHouse;
         }
     }
 }

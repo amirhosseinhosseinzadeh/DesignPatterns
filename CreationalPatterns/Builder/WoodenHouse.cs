@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.CreationalPatterns
 {
-    internal class WoodenHouse : IHouse
+    internal class WoodenHouse : IBuilder
     {
         public void BuildWalls() { }
         public void BuildFloor(){ }

@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.CreationalPatterns
 {
-    public interface IHouse
+    public interface IBuilder
     {
         void BuildWalls();
         void BuildFloor();
