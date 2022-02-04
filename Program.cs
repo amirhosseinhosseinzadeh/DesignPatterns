@@ -4,6 +4,7 @@
 // using DesignPatterns.Facade.ValidationComponent;
 using DesignPatterns.Facade;
 using DesignPatterns.CreationalPatterns;
+using System;
 
 namespace DesignPatterns
 {
@@ -41,6 +42,9 @@ namespace DesignPatterns
                 PhoneNumber = "+9890122222222"
             };
             var firstCustomerClone = firstCustomer.Clone();
+
+            var modernHouse = new HouseDirector().CreateModernHouse();
+            WriteLine(modernHouse.WallType);
 
             ReadLine();
         }

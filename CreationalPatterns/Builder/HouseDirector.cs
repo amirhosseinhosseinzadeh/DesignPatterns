@@ -4,7 +4,7 @@
     {
         public IHouse CreateModernHouse() 
         {
-            var modernHouse = new ModernHouse();
+            var modernHouse = new ModernHouseBuilder();
 
             modernHouse.BuildFoundation();
             modernHouse.BuildFloor();
@@ -15,12 +15,12 @@
             modernHouse.BuildGarden();
             modernHouse.BuildPool();
 
-            return modernHouse;
+            return modernHouse.House;
         }
 
         public IHouse CreateWoodenHouse()
         {
-            var woodenHouse = new WoodenHouse();
+            var woodenHouse = new WoodenHouseBuilder();
 
             woodenHouse.BuildFoundation();
             woodenHouse.BuildFloor();
@@ -31,7 +31,7 @@
             woodenHouse.BuildGarden();
             woodenHouse.BuildPool();
 
-            return woodenHouse;
+            return woodenHouse.House;
         }
     }
 }

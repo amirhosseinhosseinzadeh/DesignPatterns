@@ -2,6 +2,7 @@
 {
     public interface IBuilder
     {
+        IHouse House { get; set; }
         void BuildWalls();
         void BuildFloor();
         void BuildFoundation();
