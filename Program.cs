@@ -46,6 +46,9 @@ namespace DesignPatterns
             var modernHouse = new HouseDirector().CreateModernHouse();
             WriteLine(modernHouse.WallType);
 
+            var xml = new StructuralPatterns.Adapter(new StructuralPatterns.XML());
+            var x = xml.Convert();
+            
             ReadLine();
         }
     }
