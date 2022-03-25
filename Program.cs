@@ -6,6 +6,7 @@ using DesignPatterns.Facade;
 using DesignPatterns.CreationalPatterns;
 using System;
 using DesignPatterns.StructuralPatterns.Composite;
+using DesignPatterns.StructuralPatterns.Decorator;
 
 namespace DesignPatterns
 {
@@ -50,20 +51,26 @@ namespace DesignPatterns
             //var xml = new StructuralPatterns.Adapter(new StructuralPatterns.XML());
             //var x = xml.Convert();
 
-            var box = new Box();
-            var product = new Product() { Price = 10 };
-            var productTwo = new Product() { Price = 20 };
+            //var box = new Box();
+            //var product = new Product() { Price = 10 };
+            //var productTwo = new Product() { Price = 20 };
 
-            box.Add(product);
-            box.Add(productTwo);
+            //box.Add(product);
+            //box.Add(productTwo);
 
-            var boxTwo = new Box();
-            var productThree = new Product() { Price = 30 };
-            boxTwo.Add(box);
-            boxTwo.Add(productThree);
+            //var boxTwo = new Box();
+            //var productThree = new Product() { Price = 30 };
+            //boxTwo.Add(box);
+            //boxTwo.Add(productThree);
 
-            var priceOfProducts = boxTwo.GetPrice();
-            Console.WriteLine(priceOfProducts);
+            //var priceOfProducts = boxTwo.GetPrice();
+            //Console.WriteLine(priceOfProducts);
+
+            var baseNotify = new BaseNotify();
+            var firstDecorator = new FirstDecorator(baseNotify);
+            var secondDecorator = new SecondDecorator(firstDecorator);
+
+            secondDecorator.Notify();
 
             ReadLine();
         }
