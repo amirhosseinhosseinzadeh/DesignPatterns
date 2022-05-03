@@ -66,11 +66,16 @@ namespace DesignPatterns
             //var priceOfProducts = boxTwo.GetPrice();
             //Console.WriteLine(priceOfProducts);
 
-            var baseNotify = new BaseNotify();
-            var firstDecorator = new FirstDecorator(baseNotify);
-            var secondDecorator = new SecondDecorator(firstDecorator);
+            // var baseNotify = new BaseNotify();
+            // var firstDecorator = new FirstDecorator(baseNotify);
+            // var secondDecorator = new SecondDecorator(firstDecorator);
 
-            secondDecorator.Notify();
+            // secondDecorator.Notify();
+
+            var button = new BehavioralPatterns.Button(){ Name = "Babak" };
+            var authDialog = new BehavioralPatterns.AuthenticatoinDialog(button);
+            button.SetMediator(authDialog);
+            button.Click();
 
             ReadLine();
         }
