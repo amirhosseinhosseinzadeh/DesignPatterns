@@ -1,4 +1,4 @@
-namespace BehavioralPatterns.Proxy;
+namespace DesignPatterns.Structural.Proxy;
 
 public interface Db 
 {

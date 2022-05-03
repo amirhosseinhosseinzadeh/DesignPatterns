@@ -1,6 +1,6 @@
 using System;
 
-namespace BehavioralPatterns.Proxy;
+namespace DesignPatterns.Structural.Proxy;
 
 public class DbProxy: Db
 {
