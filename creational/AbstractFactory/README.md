@@ -15,7 +15,7 @@
 ###### which creates bellow matrice
 
 | # | modern | victorian | art deco |
-|  |  |  |  |
+| --- | --- | --- | --- |
 | sofa | modern sofa | victorian sofa | art deco sofa |
 | --- | --- | --- | --- |
 | chair | modern chair | victorian chair | art deco chair |
