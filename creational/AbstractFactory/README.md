@@ -15,11 +15,11 @@
 ###### which creates bellow matrice
 
 | # | modern | victorian | art deco |
-| :---:| :---:| :---:| :---:|
+| :---: | :---: | :---: | :---: |
 | sofa | modern sofa | victorian sofa | art deco sofa |
-| :---:| :---:| :---:| :---:|
+| :---: | :---: | :---: | :---: |
 | chair | modern chair | victorian chair | art deco chair |
-| :---:| :---:| :---:| :---:|
+| :---: | :---: | :---: | :---: |
 | table | modern table | vctorian table | art deco table |
 
 consider the vendors won change their catalog often and developers neither wnat to change the source code each time.
