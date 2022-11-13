@@ -14,19 +14,13 @@
 
 ###### which creates bellow matrice
 
-	|   #  |  modern  |  victorian  | art deco  |
-	|------|----------|-------------|-----------|
-	|      |modern    |  victorian  | art deco  |
-	|sofa  |sofa      |  sofa       | sofa      |
-	|      |	  |	        |	    |
-	|------|----------|-------------|-----------|
-	|      |modern    |  victorian  | art deco  |
-	|chair |chair     |  chair      | chair	    |
-	|      |          |             |	    |
-	|------|----------|-------------|-----------|
-	|      |modern    |  victorian  | art deco  |
-	|table |table     |  table      | table	    |
-	|      |          |             |	    |
+| # | modern | victorian | art deco |
+| :---:| :---:| :---:| :---:|
+| sofa | modern sofa | victorian sofa | art deco sofa |
+| :---:| :---:| :---:| :---:|
+| chair | modern chair | victorian chair | art deco chair |
+| :---:| :---:| :---:| :---:|
+| table | modern table | vctorian table | art deco table |
 
 consider the vendors won change their catalog often and developers neither wnat to change the source code each time.
 
@@ -38,27 +32,31 @@ then we can make all those variants of products to implement those interfaces
 For example all different type of chairs can implement the chair interface all tables can implement table interface and so on ...
 
 |    IChair    |
-|--------------|
-|	HasLeh()   |
-|--------------|
+| :---: |
+| HasLength()  |
+| :---: |
 |   SitOn()    |
 
 
 |VictorainChair|
-|--------------|
+| :---: |
 |    .....     |
-|--------------|
-|	HasLeh()   |
-|--------------|
+| :---: |
+| HasLength()  |
+| :---: |
 |   SitOn()    |
 
 
-|VictorainChair|
-|--------------|
+|  ModernChair |
+| :---: |
 |    .....     |
-|--------------|
-|	HasLeh()   |
-|--------------|
+| :---: |
+| HasLength()  |
+| :---: |
 |   SitOn()    |
 
+The next move is to declare abstract factory an interface with a list of creation methods for all products that are part of the product family(`CreateChair()`,
+`CreateSof()`,`CreateCoffeTable()`)
+
+These method must return `abstract` product types reperesened by the interfaces we expeted previously: `chair`,`sofa`,`coffe table` and so on.
 
