@@ -36,3 +36,29 @@ The idea which `Abstract factory` provides is to explicity Create interface for 
 then we can make all those variants of products to implement those interfaces
 
 For example all different type of chairs can implement the chair interface all tables can implement table interface and so on ...
+
+|    IChair    |
+|--------------|
+|	HasLeh()   |
+|--------------|
+|   SitOn()    |
+
+
+|VictorainChair|
+|--------------|
+|    .....     |
+|--------------|
+|	HasLeh()   |
+|--------------|
+|   SitOn()    |
+
+
+|VictorainChair|
+|--------------|
+|    .....     |
+|--------------|
+|	HasLeh()   |
+|--------------|
+|   SitOn()    |
+
+
