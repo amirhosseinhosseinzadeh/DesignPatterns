@@ -1,29 +1,29 @@
 # :bulb: Categories
 
 ## Creational :hammer:
-* Singleton pattern
-* Factory Pattern
-* Abstract factory Pattern
-* Builder pattern
-* Prototype Pattern
+* Singleton 
+* Factory 
+* Abstract factory 
+* Builder 
+* Prototype 
 ## Structural :bank:
-* Adapter pattern
-* Composite pattern
-* Proxy pattern
-* Flyweghit pattern
-* Facade pattern
-* Bridge pattern
-* Decorator pattern
+* Adapter 
+* Composite 
+* Proxy 
+* Flyweghit 
+* Facade 
+* Bridge 
+* Decorator 
 ## Behavioural :clock10:
-* Template method pattern
-* Mediator pattern
-* Chain of responsibility pattern
-* Observer patterns
-* Strategy pattern
-* Command pattern
-* State pattern
-* Visitor pattern
-* Iterator pattern
-* Interpreter pattern
-* Memento pattern
-* Repository pattern
+* Template method 
+* Mediator 
+* Chain of responsibility 
+* Observer
+* Strategy 
+* Command 
+* State 
+* Visitor 
+* Iterator 
+* Interpreter 
+* Memento 
+* Repository 
