@@ -14,7 +14,7 @@
 * Facade pattern
 * Bridge pattern
 * Decorator pattern
-## behavioural :clock10:
+## Behavioural :clock10:
 * Template method pattern
 * Mediator pattern
 * Chain of responsibility pattern
